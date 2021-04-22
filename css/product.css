@@ -59,4 +59,9 @@
         width: 100%;
         margin: 0;
     }
+    .product-wrapper .android_product_card , .product-wrapper .website_product_card ,.product-wrapper .graphic_product_card{
+        width: 80%;
+        margin: 20px auto;
+    }
+    
   }
