@@ -6,11 +6,12 @@
 
 .product-wrapper{
    width: 80%;
-    display: flex;
+   display: flex;
     flex-wrap: wrap;
     position: absolute;
     top: 100%;
     margin: 10px 10%;
+    transition: 0.4s;
 }
 
 
@@ -35,7 +36,13 @@
     text-align: center;
     margin: auto;
 }
+.display{
+    display: flex;
+}
 
+.before{
+    display: none;
+}
 .product_heading{
     margin: 0;
     text-align: center;

@@ -75,19 +75,19 @@
     </div>
     <div class="product-page">
         <h1 class="product_heading">Services</h1>
-        <div class="product-wrapper">
-            <div class="android_product_card">
-                <img class="product_icon" src="css/images/responsive.png" alt="">
+        <div class="product-wrapper" id="product-wrapper">
+            <div class="product_card android_product_card">
+                <img class=" product_icon" src="css/images/responsive.png" alt="">
                 <h3>Website Development</h3>
                 <a class="viewmore" href="">View More</a>
             </div>
-            <div class="website_product_card"> 
+            <div class= "product_card website_product_card"> 
                 <img class="product_icon" src="css/images/smartphone.png" alt="">
                 <h3>App Development</h3>
                 <a class="viewmore" href="">View More</a>
 
             </div>
-            <div class="graphic_product_card"> 
+            <div class="product_card graphic_product_card"> 
                 <img class="product_icon" src="css/images/illustration.png" alt="">
                 <h3>Graphic Designing</h3>
                 <a class="viewmore" href="">View More</a>
@@ -98,6 +98,15 @@
     <div class="yellow_back_product"></div>
     <script>
   
+        
+        window.addEventListener('scroll',()=>{
+            if(window.scrollY>window.screen.height-400){
+                document.getElementById('product-wrapper').style.opacity = 1
+
+            }else{
+                document.getElementById('product-wrapper').style.opacity = 0
+            }
+        })
      anime({
          targets:'.main_svg ,.heading,.nav-menu , .intro',
          translateY:[30,0],
@@ -128,6 +137,7 @@
          loop:false,
          easing:'linear',
      })
+
     </script>
     <script src="javascript/navbar.js"></script>
 </body>
