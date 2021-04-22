@@ -1,5 +1,57 @@
 .product-page{
-    height: 70%;
+    height: 50%;
+    background-color: rgb(245, 245, 245);
     width: 100%;
-    overflow-x: hidden;
 }
+
+.product-wrapper{
+   width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 100%;
+    margin: 10px 10%;
+}
+
+
+.product-wrapper .android_product_card , .product-wrapper .website_product_card ,.product-wrapper .graphic_product_card{
+    width: 200px;
+    height: 150px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.yellow_back_product{
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient(to right, rgb(236, 206, 35), rgb(221, 182, 10));
+}
+.product_icon{
+    width: 70px;
+    text-align: center;
+    margin: auto;
+}
+
+.product_heading{
+    margin: 0;
+    text-align: center;
+    padding-top: 100px;
+    color: rgb(121, 81, 30);
+}
+
+@media only screen and (max-width: 800px) {
+    .product-wrapper{
+        top: 150%;
+    }
+    .product_heading{
+        padding-top: 200px;
+    }
+
+    .product-page{
+        height: 70%;
+    }
+  }
