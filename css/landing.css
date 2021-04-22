@@ -1,14 +1,16 @@
 .landing-page{
-    background-image: url(images/main_back.png);
     width: 100%;
-    height: 150%;
-    background-repeat: no-repeat;
-    background-size: contain;
+    height: 100%;
+
+    background-image:linear-gradient(to right, rgb(252, 226, 80), rgb(219, 182, 15));
 }
 
+
 @media only screen and (max-width: 800px) {
-    .landing-page{
-        background-size: contain;
-        background-image: url(images/mobile_back.png);
-    }
+   
+  }
+
+
+@media only screen and (max-width: 800px) {
+   
   }
