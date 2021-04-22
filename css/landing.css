@@ -1,28 +1,38 @@
 .landing-page{
     width: 100%;
     height: 70%;
-    overflow:hidden ;
+    overflow-x:hidden ;
     background-image:linear-gradient(to right, rgb(236, 206, 35), rgb(221, 182, 10));
 }
 
 
-.main_animation{
-    width: 400px;
-    height: 400px;
-    border-radius: 20px;
+
+.intro{
     position: absolute;
-    top: 130px;
-    left: 100px;
-    position: relative;
+    top: 30%;
+    right: 10%;
+    color: white;
 }
 
-.main_svg{
-    width: 400px;
+.intro h1{
+    font-size: 40px;
+    font-weight: 100;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-family: 'Righteous';
+    color: rgb(255, 255, 255);
 }
+.intro p{
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 20px;
+    width: fit-content;
+}
+
 
 .my {
     position: absolute;
-    left: 50%;
+    left: 20%;
     top:50%;
 }
 .card1{
@@ -213,11 +223,62 @@
     border-radius: 10px;
     left: -110px;
 }
+
+
+.box1{
+    position: absolute;
+    right:200px ;
+    top: 25%;
+}
+.box_card1{
+    width: 100px;
+    position: absolute;
+    height: 100px;
+    background-color: rgb(116, 116, 197);
+    transform: skewY(20deg);
+}
+
+.box_card2{
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    background-color: rgb(69, 69, 151);
+    transform:rotateX(68deg) rotateZ(45deg);
+   top: -88px;
+   left: 30px;
+}
+.box_card3{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 100px;
+    background-color: rgb(35, 35, 119);
+    transform: skewY(-20deg);
+}
+
 @media only screen and (max-width: 800px) {
-   
+    .my{
+        top: 90%;
+    }
   }
 
 
 @media only screen and (max-width: 800px) {
-   
+   .my{
+       top: 90%;
+   }
+   .intro{
+       width: 100%;
+       text-align: center;
+       right: 0;
+       top: 20%;
+       align-items: center;
+   }
+   .intro h1{
+       text-align: center;
+   }
+.intro p{
+    width: 80%;
+    margin: 20px auto;
+}
   }
