@@ -1,0 +1,42 @@
+.navbar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+
+}
+
+.navbar .heading{
+    position: fixed;
+    left: 40px;
+    top: 20px;
+}
+
+.navbar .heading h2{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-menu{
+    position: fixed;
+    right: 40px;
+    top: 20px;
+}
+
+.navbar .nav-menu a{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+}
+
+.navbar .nav-menu a:hover{
+    background-color: rgba(0, 0, 0, 0.123);
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-menu{
+        display: none;
+    }
+  }
