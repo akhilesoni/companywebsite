@@ -43,26 +43,26 @@
             <p>you think, we design</p>
         </div>
         <div class="my drawing">
-            <div class="card3"></div>
+            <div class="c1 card3"></div>
 
-            <div class="card2"></div>
+            <div class="c1 card2"></div>
 
-            <div class="card1"></div>
-            <div class="card5"></div>
-            <div class="card7"></div>
+            <div class="c1 card1"></div>
+            <div class="c1 card5"></div>
+            <div class="c1 card7"></div>
 
-            <div class="card6"></div>
-            <div class="card4"></div>
-            <div class="card8"></div>
-            <div class="card9"></div>
-            <div class="card10"></div>
-            <div class="card11"></div>
-            <div class="card12"></div>
-            <div class="card13"></div>
-            <div class="card14"></div>
-            <div class="card15"></div>
-            <div class="card16"></div>
-            <div class="card17"></div>
+            <div class="c1 card6"></div>
+            <div class="c1 card4"></div>
+            <div class="c1 card8"></div>
+            <div class="c1 card9"></div>
+            <div class="c1 card10"></div>
+            <div class="c1 card11"></div>
+            <div class="c1 card12"></div>
+            <div class="c1 card13"></div>
+            <div class="c1 card14"></div>
+            <div class="c1 card15"></div>
+            <div class="c1 card16"></div>
+            <div class="c1 card17"></div>
 
 
         </div>
@@ -71,10 +71,31 @@
     <script>
   
      anime({
-         targets:'.main_svg ,.heading,.navbar ',
+         targets:'.main_svg ,.heading,.nav-menu , .intro',
          translateY:[30,0],
          opacity:[0,1],
          duration:700,
+         autoplay:true,
+         loop:false,
+         easing:'linear',
+     })
+
+     anime({
+         targets:'.c1',
+         opacity:[0,1],
+         duration:300,
+         delay:anime.stagger(100),
+         autoplay:true,
+         loop:false,
+         easing:'linear',
+     })
+
+     anime({
+         targets:'.box1',
+         translateX:[30,0],
+         opacity:[0,1],
+         duration:200,
+         delay:200,
          autoplay:true,
          loop:false,
          easing:'linear',
